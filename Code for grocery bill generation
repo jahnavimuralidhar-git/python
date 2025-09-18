@@ -1,0 +1,30 @@
+'''
+simple grocery bill generator and total calculator for stores.
+This generator continually takes input and calculates total and keeps generating the bill.
+0 = to stop,
+'''
+item = input("Enter the name of the item here")
+item2 = item.lower()
+total = 0
+bill = list(())
+while item2 != 0:
+    price = int(input("Enter the price of one item here"))
+    quantity = int(input("Enter the quantity purchased here"))
+    total = total + price*quantity
+    print("this is your total",total)
+    price_str = str(price)
+    quantity_str = str(quantity)
+    bill_entry = item2+" "+price_str+"*"+quantity_str
+    bill.append(bill_entry)
+    for x in bill:
+        print(x)
+    item = input("Enter the name of the next item purchased here")
+    item2 = item.lower()
+if item2 == 0:
+    print("this is your total",total)
+    for x in bill:
+        print(x)
+    print("Thank you for your purchase!")
+
+    
+    
