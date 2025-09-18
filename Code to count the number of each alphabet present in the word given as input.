@@ -1,0 +1,23 @@
+word = input("Enter the word here : ")
+word2 = word.lower()
+list1 = list(())
+for x in word2:
+    list1.append(x)
+set1 = set((list1))
+list2 = list(())
+for x in set1:
+    list2.append(x)
+count = 0
+i = 0
+while i < len(list2):
+    b = list2[i]
+    c = str(b)
+    for x in word2:
+        if x == c:
+            count = count + 1
+    print(c,":",count)
+    count = 0
+    i = i + 1
+            
+            
+    
