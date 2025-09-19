@@ -1,0 +1,47 @@
+'''
+Code performing the same function as the code uploaded on 18th September, 2025, but reworked.
+The code now will produce output seperately for two words if the two words are seperated by a " " 
+EXAMPLE: "Hello to you"
+OUTPUT GENERATED:
+e : 1
+h : 1
+l : 2
+o : 1
+ 
+o : 1
+t : 1
+ 
+o : 1
+u : 1
+y : 1
+
+The split() function has been used to make this happen.
+'''
+word = input("Enter the word here")
+word2 = word.lower()
+list1 = word2.split(" ")
+i = 0
+while i < len(list1):
+    word = list1[i]
+    list2 = list(())
+    for x in word:
+        list2.append(x)
+    set1 = set((list2))
+    list3 = list(())
+    for x in set1:
+        list3.append(x)
+    list3.sort()
+    j = 0
+    count = 0
+    while j < len(list3):
+        for x in word:
+            if x == list3[j]:
+                count = count + 1
+        print(list3[j],":",count)
+        count = 0
+        j = j + 1
+    print(" ")
+    i = i + 1
+    list2.clear()
+    set1.clear()
+    list3.clear()
