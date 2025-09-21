@@ -1,0 +1,8 @@
+#strings and substrings: count the number of times a word occurs in a sentence
+word = input("Enter the sentence here")
+word2 = word.lower()
+word3 = input("Enter the word you are searching for here")
+word4 = word3.lower()
+tuple1 = tuple(word2.split(" "))
+count = tuple1.count(word4)
+print(count)
