@@ -1,0 +1,20 @@
+'''
+Code to swap case (lower -> upper, upper -> lower)
+'''
+word = input("Enter the word here")
+list1 = list(())
+for x in word:
+    list1.append(x)
+i = 0
+while i < len(list1):
+    if list1[i].islower():
+        list1[i]=list1[i].upper()
+    else:
+        list1[i]=list1[i].lower()
+    i = i + 1
+n = ''
+i = 0
+while i < len(list1):
+    n = n + list1[i]
+    i = i + 1
+print(n)
