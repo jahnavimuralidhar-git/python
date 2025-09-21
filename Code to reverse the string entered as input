@@ -1,0 +1,14 @@
+'''
+Code to reverse string
+'''
+string = input("Enter the string here")
+list1 = list(())
+for x in string:
+    list1.append(x)
+list1.reverse()
+n = ''
+j = 0
+while j < len(list1):
+    n = n + list1[j]
+    j = j + 1
+print(n)
