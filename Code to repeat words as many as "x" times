@@ -1,0 +1,29 @@
+#tool to multiply each word x number of times (where x is an input given)
+sentence = input("Enter the sentence here")
+b = int(input("Enter the number here"))
+sentence_list = sentence.split(" ")
+i = 0
+n = ''
+while i < len(sentence_list):
+    k = 0
+    while k < b:
+        n = n + sentence_list[i]
+        n = n + " "
+        k = k + 1
+    i = i + 1
+print(n)
+
+#tool to multiple x times (but differently done) -> multiplication of the whole sentence
+sentence = input("Enter the sentence here")
+b = int(input("Enter the number of times you want the sentence repeated"))
+sentence_list = sentence.split(" ")
+tuple1 = tuple((sentence_list))
+tuple2 = tuple1*b
+
+n = ''
+i = 0
+while i < len(tuple2):
+    n = n + tuple2[i]
+    n = n + " "
+    i = i + 1
+print(n)
