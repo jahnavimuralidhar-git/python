@@ -1,0 +1,15 @@
+#Code to count the number of times a word occurs in a sentence
+word = input("Enter the word which you want counted here")
+word1 = word.lower()
+sentence = input("Enter the sentence here")
+sentence1 = sentence.lower()
+mylist = sentence1.split(" ")
+tuple1 = tuple((mylist))
+i = 0
+count = 0
+while i < (len(tuple1)):
+    if tuple1[i]==word1:
+        count = count + 1
+    i = i + 1
+print(count)
+        
