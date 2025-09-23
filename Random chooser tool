@@ -1,0 +1,10 @@
+## random chooser tool to choose from input words given seperated by a commma
+## a word is randomly chosen from the input words given.
+## duplicate words are ignored.
+input1 = input("Enter the input seperated by a space here")
+list1 = input1.split(" ")
+set1 = set((list1))
+i = 0
+while len(set1) != 1:
+    set1.pop()
+print(set1)
