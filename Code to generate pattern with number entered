@@ -1,0 +1,35 @@
+'''
+code to generate a pattern
+Example input: 10
+Pattern generated should be:
+1 
+2 3
+4 5 6
+7 8 9 10
+NOTE: if the number entered has some left over numbers (example: 11), then those are simply ignored
+'''
+n = int(input())
+i = 1
+list1 = list(())
+while i <= n:
+    if i > n:
+        break
+    else:
+        n = n - i
+        list1.append(i)
+        i = i + 1
+for x in list1:
+    k = x*(x+1)/2
+    i = 1
+    list1 = list(())
+    list1.append(k)
+    while i < x:
+        list1.append(k-i)
+        i = i + 1
+    list1.sort()
+    for x in list1:
+        print(int(x),end=" ")
+    print(" ")
+    list1.clear()
+
+
