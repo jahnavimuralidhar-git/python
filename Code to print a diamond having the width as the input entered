@@ -1,0 +1,19 @@
+#Lets generate diamonds! 
+#code for diamond
+#the input entered = the width of the diamond
+n = int(input())
+if not(n%2==0):
+    n = n + 1
+i = 0
+while i < n:
+    x = int((n-i-2)/2) 
+    print(x*" "+"*"+i*" "+"*"+x*" ")
+    i = i + 2
+#negative loop
+i = 1
+while i <= int(n/2):
+    print((i-1)*" "+"*"+(n-2*i)*" "+"*"+i*" ")
+    i = i + 1
+
+
+
